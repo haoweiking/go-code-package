@@ -2,8 +2,9 @@ package timer
 
 import "time"
 
-// 定时器
-func startTimer(f func(), hours int, minutes int, seconds int) {
+// Timer function is a method that it controls the hour, minute and second of the function run.
+// The f is a function param, and others are time duration param
+func Timer(f func(), hours int, minutes int, seconds int) {
 	go func() {
 		for {
 			f()
@@ -25,4 +26,3 @@ func startTimer(f func(), hours int, minutes int, seconds int) {
 		}
 	}()
 }
-

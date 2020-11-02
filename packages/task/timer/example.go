@@ -21,14 +21,14 @@ func taskHour() {
 }
 
 func TaskSecond() {
-	startTimer(taskSecond, 0, 0, 10)
+	Timer(taskSecond, 0, 0, 10)
 }
 
 func TaskMinute() {
-	startTimer(taskMinute, 0, 10, 0)
+	Timer(taskMinute, 0, 10, 0)
 }
 
 func TaskHour() {
-	startTimer(taskHour, 1, 0, 0)
+	Timer(taskHour, 1, 0, 0)
 }
 
